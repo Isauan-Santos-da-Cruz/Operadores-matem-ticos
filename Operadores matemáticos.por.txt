@@ -1,0 +1,71 @@
+programa
+{
+	inteiro num1
+	inteiro num2
+	inteiro resposta
+	
+	
+	
+	// Operadores matemáticos 
+	funcao adicao (){
+		resposta = num1+num2
+		escreva("o resultado da adição é :"+resposta)
+	}
+	funcao subtracao (){
+		resposta = num1 - num2
+		escreva("o resultado da subtração é :"+resposta)
+	}
+	funcao multiplicacao(){
+		resposta = num1 * num2
+		escreva("o resultado da multiplicação é :"+resposta)
+	}
+	funcao divisao (){
+		resposta = num1 / num2
+		escreva("o resultado da divisão é :"+resposta)
+	}
+	
+	
+	// aaaah zé da manga!
+	funcao inicio ()
+	{
+		inteiro operador
+		cadeia decisao
+		
+		
+		escreva("\n escolha o primeiro número: ")
+		leia(num1)
+		escreva("agora o segundo número: ")
+		leia (num2)
+		
+		
+		escreva("\n 1.adição \n 2.subtração \n 3.multiplicação \n 4.divisão \n")
+		escreva ("qual o tipo do operador? : ")
+		leia(operador)
+		
+		
+		//seleção de tipos de contas
+		se (operador == 1){
+			adicao()
+		}
+		se (operador == 2){
+			subtracao()
+		}
+		se (operador == 3){
+			multiplicacao()
+		}
+		se (operador == 4){
+			divisao()
+		}
+		
+		//continuar a contagem
+		escreva("\n \n gostaria de tentar de novo?")
+		leia(decisao)
+		se (decisao == "sim" ou decisao == "s"){
+			inicio()
+		}
+		
+		//finaliza o código
+		escreva("\n \n ........então ja era irmão........")
+		
+	}
+}
